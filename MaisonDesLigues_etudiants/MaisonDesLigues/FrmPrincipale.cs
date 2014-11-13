@@ -376,18 +376,30 @@ namespace MaisonDesLigues
 
         private void comboAtelierModif_SelectedIndexChanged(object sender, EventArgs e)
         {
-            comboThemeModif.Enabled = true;
+            comboSessionModif.Enabled = true;
             //(cmbVacationTheme.Items.Clear();
-            comboThemeModif.SelectedIndex = -1;
+            comboSessionModif.SelectedIndex = -1;
             if (comboAtelierModif.SelectedValue.ToString() != "System.Data.DataRowView")
             {
-                Utilitaire.RemplirComboBox(UneConnexion, comboThemeModif, "VTHEME01", comboAtelierModif.SelectedValue.ToString(), "idatelier");
+                Utilitaire.RemplirComboBox(UneConnexion, comboSessionModif, "VTHEME01", comboAtelierModif.SelectedValue.ToString(), "idatelier");
             }
-            if (comboThemeModif.Items.Count == 0)
+            if (comboSessionModif.Items.Count == 0)
             {
-                comboThemeModif.Text = "Aucun thème disponible";
-                comboThemeModif.Enabled = false;
+                comboSessionModif.Text = "Aucun thème disponible";
+                comboSessionModif.Enabled = false;
             }
+        }
+
+        private void comboThemeModif_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboSessionModif.Text != "Aucun thème disponible" && comboSessionModif.Text != "")
+            { 
+            
+            
+            
+            
+            }
+
         }
 
         

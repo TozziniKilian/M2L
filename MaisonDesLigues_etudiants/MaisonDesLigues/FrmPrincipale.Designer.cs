@@ -79,7 +79,7 @@
             this.dateFinModif = new System.Windows.Forms.DateTimePicker();
             this.dateDebutModif = new System.Windows.Forms.DateTimePicker();
             this.comboAtelierModif = new System.Windows.Forms.ComboBox();
-            this.comboThemeModif = new System.Windows.Forms.ComboBox();
+            this.comboSessionModif = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.checkModifier = new System.Windows.Forms.CheckBox();
             this.lblElementAjouter = new System.Windows.Forms.Label();
@@ -561,7 +561,7 @@
             this.grpModifVac.Controls.Add(this.dateFinModif);
             this.grpModifVac.Controls.Add(this.dateDebutModif);
             this.grpModifVac.Controls.Add(this.comboAtelierModif);
-            this.grpModifVac.Controls.Add(this.comboThemeModif);
+            this.grpModifVac.Controls.Add(this.comboSessionModif);
             this.grpModifVac.Location = new System.Drawing.Point(207, 336);
             this.grpModifVac.Name = "grpModifVac";
             this.grpModifVac.Size = new System.Drawing.Size(539, 212);
@@ -616,9 +616,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(79, 110);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Theme :";
+            this.label2.Text = "Session :";
             this.label2.UseWaitCursor = true;
             // 
             // dateFinModif
@@ -647,15 +647,16 @@
             this.comboAtelierModif.UseWaitCursor = true;
             this.comboAtelierModif.SelectedIndexChanged += new System.EventHandler(this.comboAtelierModif_SelectedIndexChanged);
             // 
-            // comboThemeModif
+            // comboSessionModif
             // 
-            this.comboThemeModif.Enabled = false;
-            this.comboThemeModif.FormattingEnabled = true;
-            this.comboThemeModif.Location = new System.Drawing.Point(36, 132);
-            this.comboThemeModif.Name = "comboThemeModif";
-            this.comboThemeModif.Size = new System.Drawing.Size(143, 21);
-            this.comboThemeModif.TabIndex = 0;
-            this.comboThemeModif.UseWaitCursor = true;
+            this.comboSessionModif.Enabled = false;
+            this.comboSessionModif.FormattingEnabled = true;
+            this.comboSessionModif.Location = new System.Drawing.Point(36, 132);
+            this.comboSessionModif.Name = "comboSessionModif";
+            this.comboSessionModif.Size = new System.Drawing.Size(143, 21);
+            this.comboSessionModif.TabIndex = 0;
+            this.comboSessionModif.UseWaitCursor = true;
+            this.comboSessionModif.SelectedIndexChanged += new System.EventHandler(this.comboThemeModif_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -1027,7 +1028,7 @@
         private System.Windows.Forms.DateTimePicker dateFinModif;
         private System.Windows.Forms.DateTimePicker dateDebutModif;
         private System.Windows.Forms.ComboBox comboAtelierModif;
-        private System.Windows.Forms.ComboBox comboThemeModif;
+        private System.Windows.Forms.ComboBox comboSessionModif;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkModifier;
         private System.Windows.Forms.Button buttonModifier;
