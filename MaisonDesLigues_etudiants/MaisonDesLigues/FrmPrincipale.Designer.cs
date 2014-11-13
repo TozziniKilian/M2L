@@ -70,6 +70,18 @@
             this.lblAtelierInscription = new System.Windows.Forms.Label();
             this.TabPrincipal = new System.Windows.Forms.TabControl();
             this.tabAjoutModif = new System.Windows.Forms.TabPage();
+            this.grpModifVac = new System.Windows.Forms.GroupBox();
+            this.buttonModifier = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateFinModif = new System.Windows.Forms.DateTimePicker();
+            this.dateDebutModif = new System.Windows.Forms.DateTimePicker();
+            this.comboAtelierModif = new System.Windows.Forms.ComboBox();
+            this.comboThemeModif = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.checkModifier = new System.Windows.Forms.CheckBox();
             this.lblElementAjouter = new System.Windows.Forms.Label();
             this.grpTheme = new System.Windows.Forms.GroupBox();
             this.lblThemeAtelier = new System.Windows.Forms.Label();
@@ -103,6 +115,7 @@
             this.GrpNuiteIntervenant.SuspendLayout();
             this.TabPrincipal.SuspendLayout();
             this.tabAjoutModif.SuspendLayout();
+            this.grpModifVac.SuspendLayout();
             this.grpTheme.SuspendLayout();
             this.grpAtelier.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numAtelierNbPlace)).BeginInit();
@@ -523,6 +536,9 @@
             // 
             // tabAjoutModif
             // 
+            this.tabAjoutModif.Controls.Add(this.grpModifVac);
+            this.tabAjoutModif.Controls.Add(this.label1);
+            this.tabAjoutModif.Controls.Add(this.checkModifier);
             this.tabAjoutModif.Controls.Add(this.lblElementAjouter);
             this.tabAjoutModif.Controls.Add(this.grpTheme);
             this.tabAjoutModif.Controls.Add(this.grpAtelier);
@@ -534,6 +550,133 @@
             this.tabAjoutModif.TabIndex = 1;
             this.tabAjoutModif.Text = "Ajouts/modifications";
             this.tabAjoutModif.UseVisualStyleBackColor = true;
+            // 
+            // grpModifVac
+            // 
+            this.grpModifVac.Controls.Add(this.buttonModifier);
+            this.grpModifVac.Controls.Add(this.label5);
+            this.grpModifVac.Controls.Add(this.label4);
+            this.grpModifVac.Controls.Add(this.label3);
+            this.grpModifVac.Controls.Add(this.label2);
+            this.grpModifVac.Controls.Add(this.dateFinModif);
+            this.grpModifVac.Controls.Add(this.dateDebutModif);
+            this.grpModifVac.Controls.Add(this.comboAtelierModif);
+            this.grpModifVac.Controls.Add(this.comboThemeModif);
+            this.grpModifVac.Location = new System.Drawing.Point(207, 336);
+            this.grpModifVac.Name = "grpModifVac";
+            this.grpModifVac.Size = new System.Drawing.Size(539, 212);
+            this.grpModifVac.TabIndex = 8;
+            this.grpModifVac.TabStop = false;
+            this.grpModifVac.Text = "Modifier une date vacation";
+            this.grpModifVac.UseWaitCursor = true;
+            this.grpModifVac.Visible = false;
+            // 
+            // buttonModifier
+            // 
+            this.buttonModifier.Location = new System.Drawing.Point(214, 167);
+            this.buttonModifier.Name = "buttonModifier";
+            this.buttonModifier.Size = new System.Drawing.Size(75, 27);
+            this.buttonModifier.TabIndex = 8;
+            this.buttonModifier.Text = "Modifier";
+            this.buttonModifier.UseVisualStyleBackColor = true;
+            this.buttonModifier.UseWaitCursor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(345, 110);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(88, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Modifier date fin :";
+            this.label5.UseWaitCursor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(345, 40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(104, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Modifier date début :";
+            this.label4.UseWaitCursor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(83, 40);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Atelier :";
+            this.label3.UseWaitCursor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(79, 110);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Theme :";
+            this.label2.UseWaitCursor = true;
+            // 
+            // dateFinModif
+            // 
+            this.dateFinModif.Location = new System.Drawing.Point(301, 129);
+            this.dateFinModif.Name = "dateFinModif";
+            this.dateFinModif.Size = new System.Drawing.Size(200, 20);
+            this.dateFinModif.TabIndex = 3;
+            this.dateFinModif.UseWaitCursor = true;
+            // 
+            // dateDebutModif
+            // 
+            this.dateDebutModif.Location = new System.Drawing.Point(301, 59);
+            this.dateDebutModif.Name = "dateDebutModif";
+            this.dateDebutModif.Size = new System.Drawing.Size(200, 20);
+            this.dateDebutModif.TabIndex = 2;
+            this.dateDebutModif.UseWaitCursor = true;
+            // 
+            // comboAtelierModif
+            // 
+            this.comboAtelierModif.FormattingEnabled = true;
+            this.comboAtelierModif.Location = new System.Drawing.Point(36, 59);
+            this.comboAtelierModif.Name = "comboAtelierModif";
+            this.comboAtelierModif.Size = new System.Drawing.Size(143, 21);
+            this.comboAtelierModif.TabIndex = 1;
+            this.comboAtelierModif.UseWaitCursor = true;
+            this.comboAtelierModif.SelectedIndexChanged += new System.EventHandler(this.comboAtelierModif_SelectedIndexChanged);
+            // 
+            // comboThemeModif
+            // 
+            this.comboThemeModif.Enabled = false;
+            this.comboThemeModif.FormattingEnabled = true;
+            this.comboThemeModif.Location = new System.Drawing.Point(36, 132);
+            this.comboThemeModif.Name = "comboThemeModif";
+            this.comboThemeModif.Size = new System.Drawing.Size(143, 21);
+            this.comboThemeModif.TabIndex = 0;
+            this.comboThemeModif.UseWaitCursor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(560, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(21, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "ou";
+            // 
+            // checkModifier
+            // 
+            this.checkModifier.AutoSize = true;
+            this.checkModifier.Location = new System.Drawing.Point(615, 33);
+            this.checkModifier.Name = "checkModifier";
+            this.checkModifier.Size = new System.Drawing.Size(152, 17);
+            this.checkModifier.TabIndex = 6;
+            this.checkModifier.Text = "Modifier une date vacation";
+            this.checkModifier.UseVisualStyleBackColor = true;
+            this.checkModifier.CheckedChanged += new System.EventHandler(this.checkModifier_CheckedChanged);
             // 
             // lblElementAjouter
             // 
@@ -551,7 +694,7 @@
             this.grpTheme.Controls.Add(this.btnEnregistrerTheme);
             this.grpTheme.Controls.Add(this.txttheme);
             this.grpTheme.Controls.Add(this.lblThemeNom);
-            this.grpTheme.Location = new System.Drawing.Point(138, 120);
+            this.grpTheme.Location = new System.Drawing.Point(190, 102);
             this.grpTheme.Name = "grpTheme";
             this.grpTheme.Size = new System.Drawing.Size(556, 151);
             this.grpTheme.TabIndex = 3;
@@ -608,7 +751,7 @@
             this.grpAtelier.Controls.Add(this.lblPlaceMaxAtelier);
             this.grpAtelier.Controls.Add(this.lblNomAtelier);
             this.grpAtelier.Controls.Add(this.txtAtelierNom);
-            this.grpAtelier.Location = new System.Drawing.Point(138, 120);
+            this.grpAtelier.Location = new System.Drawing.Point(190, 102);
             this.grpAtelier.Name = "grpAtelier";
             this.grpAtelier.Size = new System.Drawing.Size(556, 151);
             this.grpAtelier.TabIndex = 4;
@@ -687,7 +830,7 @@
             this.grpVacation.Controls.Add(this.btnEnregistrerVacation);
             this.grpVacation.Controls.Add(this.lblDateFinVacation);
             this.grpVacation.Controls.Add(this.lblDateDebutVacation);
-            this.grpVacation.Location = new System.Drawing.Point(138, 120);
+            this.grpVacation.Location = new System.Drawing.Point(190, 102);
             this.grpVacation.Name = "grpVacation";
             this.grpVacation.Size = new System.Drawing.Size(599, 180);
             this.grpVacation.TabIndex = 4;
@@ -800,6 +943,8 @@
             this.TabPrincipal.ResumeLayout(false);
             this.tabAjoutModif.ResumeLayout(false);
             this.tabAjoutModif.PerformLayout();
+            this.grpModifVac.ResumeLayout(false);
+            this.grpModifVac.PerformLayout();
             this.grpTheme.ResumeLayout(false);
             this.grpTheme.PerformLayout();
             this.grpAtelier.ResumeLayout(false);
@@ -878,6 +1023,18 @@
         private System.Windows.Forms.ComboBox cmbThemeAtelier;
         private System.Windows.Forms.Label lblElementAjouter;
         private System.Windows.Forms.NumericUpDown numAtelierNbPlace;
+        private System.Windows.Forms.GroupBox grpModifVac;
+        private System.Windows.Forms.DateTimePicker dateFinModif;
+        private System.Windows.Forms.DateTimePicker dateDebutModif;
+        private System.Windows.Forms.ComboBox comboAtelierModif;
+        private System.Windows.Forms.ComboBox comboThemeModif;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkModifier;
+        private System.Windows.Forms.Button buttonModifier;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
 
 
     }

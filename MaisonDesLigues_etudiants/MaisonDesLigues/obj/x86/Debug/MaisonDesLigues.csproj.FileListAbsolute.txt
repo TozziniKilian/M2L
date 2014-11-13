@@ -66,3 +66,6 @@ C:\Users\Fainec\Desktop\PPE M2L Kilian\MaisonDesLigues\obj\x86\Debug\MaisonDesLi
 C:\Users\Fainec\Desktop\PPE M2L Kilian\MaisonDesLigues\obj\x86\Debug\MaisonDesLigues.FrmPrincipale.resources
 C:\Users\Fainec\Desktop\PPE M2L Kilian\MaisonDesLigues\obj\x86\Debug\MaisonDesLigues.Properties.Resources.resources
 C:\Users\Fainec\Desktop\PPE M2L Kilian\MaisonDesLigues\obj\x86\Debug\MaisonDesLigues.csproj.GenerateResource.Cache
+D:\Amayumi\Mes documents\GitHub\M2L\MaisonDesLigues_etudiants\MaisonDesLigues\bin\Debug\MaisonDesLigues.exe.config
+D:\Amayumi\Mes documents\GitHub\M2L\MaisonDesLigues_etudiants\MaisonDesLigues\obj\x86\Debug\MaisonDesLigues.exe
+D:\Amayumi\Mes documents\GitHub\M2L\MaisonDesLigues_etudiants\MaisonDesLigues\obj\x86\Debug\MaisonDesLigues.pdb

@@ -361,6 +361,38 @@ namespace MaisonDesLigues
         }
 
 
+        private void checkModifier_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkModifier.Checked == true)
+            {
+                grpModifVac.Visible = true;
+                Utilitaire.RemplirComboBox(UneConnexion, comboAtelierModif, "VATELIER01");
+            }
+            else if (checkModifier.Checked == false)
+            {
+                grpModifVac.Visible = false;
+            }
+        }
+
+        private void comboAtelierModif_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboThemeModif.Enabled = true;
+            //(cmbVacationTheme.Items.Clear();
+            comboThemeModif.SelectedIndex = -1;
+            if (comboAtelierModif.SelectedValue.ToString() != "System.Data.DataRowView")
+            {
+                Utilitaire.RemplirComboBox(UneConnexion, comboThemeModif, "VTHEME01", comboAtelierModif.SelectedValue.ToString(), "idatelier");
+            }
+            if (comboThemeModif.Items.Count == 0)
+            {
+                comboThemeModif.Text = "Aucun thème disponible";
+                comboThemeModif.Enabled = false;
+            }
+        }
+
+        
+
+
 
 
 
